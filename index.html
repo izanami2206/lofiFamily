@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asscets/css/base.css">
+    <link rel="stylesheet" href="./asscets/css/main.css">
+    <link rel="stylesheet" href="./asscets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./asscets/font/fontawesome-free-5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-br">
+            <img src="./asscets/data/img/logo/logo.0cbf9e63.gif" alt="">
+        </div>
+    </div>
+    <!-- Background -->
+    <div class="main-background">
+        <div class="background-day--no-rain">
+            <video src="./asscets/data/video/BDR Day-Christmas ver 112521 (1).mp4" loop muted autoplay></video>
+        </div>
+        <div class="background-night--no-rain none">
+            <video src="./asscets/data/video/BDR STARRY NIGHT - Christmas ver.mp4" loop muted autoplay></video>
+        </div>
+        <div class="background-day--rain none">
+            <video src="./asscets/data/video/BDR RAINY DAY - Christmas ver.mp4" loop muted autoplay></video>
+        </div>
+        <div class="background-night--rain none">
+            <video src="./asscets/data/video/BDR RAINY NIGHT - Christmas ver.mp4" loop muted autoplay></video>
+        </div>
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-logo">
+                    <img src="./asscets/data/img/logo/logo.0cbf9e63.gif" alt="">
+            </div>      
+    
+            <div class="header-nav">
+                <ul class="nav">
+                    <button class="nav-item-btn btn">How it works</button>
+                    <button class="nav-item-btn btn">Pricing</button>
+                
+                    <button class="nav-item-btn btn">Contact us</button>
+                
+                    <button class="nav-item-btn btn">More</button>
+                
+                    <button class="nav-item-btn btn">
+                        Merch
+                        <a href="https://www.shop.lofi.co/"></a> 
+                    </button>
+                    <p class="new-tag">New!</p>                   
+                </ul>
+            </div>
+    
+            <div class="header-toobar">
+                <ul class="toobar">
+                    <li class="toobar-item">
+                        <label class="switch">
+                            <input class="btn-switch" id="day-check" onclick="weatherSwitch()" type="checkbox" checked>
+                                <span class="slider"></span>
+                                <i class="sun-icon far fa-sun"></i>
+                                <i class="moon-icon far fa-moon"></i>
+                        </label>
+                    </li>
+                    <li class="toobar-item">
+                        <input type="checkbox" class="switch-fullscreen">
+                        <img src="./asscets/data/img/fullscreen/fullscreen.png" alt="" class="full-screen">
+                    </li>
+                    <li class="toobar-item">
+                        <button class="share-item-btn toobar-btn btn">Share</button>
+                    </li>
+                    <li class="toobar-item">
+                        <button class="signup-btn toobar-btn btn">Sign up</button>
+                    </li>
+                    <li class="toobar-item">
+                        <button class="login-btn toobar-btn btn">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- BODY CONTENT -->
+        <div class="content">
+            <label class="traffic-switch">
+                <input class="btn-switch--traffic" id="traffic-check" onclick="trafficSwitch()" type="checkbox">
+                    <span class="traffic-ckeck"></span>
+                    <span class="traffic-ckecked"></span>
+                    <div class="traffic-title-box">
+                        <div class="traffic-box-volume">
+                            <p class="traffic-title">City Traffic</p>
+                            <input id="traffic-volume" class="traffic-volume" type="range"  value="50" step="1" min="0" max="100">                          
+                        </div>
+                    </div>
+                <audio src="./asscets/data/music/traffic/traffic.mp3" id="traffic-song"></audio>
+            </label>
+            <label class="rain-switch">
+                <input class="btn-switch--rain" id="rain-check" onclick="weatherSwitch()" type="checkbox">
+                    <span class="rain-ckeck"></span>
+                    <span class="rain-ckecked"></span>
+                    <div class="rain-title-box">
+                        <div class="rain-box-volume">
+                            <p class="rain-title">City Rain</p>
+                            <input id="rain-volume" class="rain-volume" type="range"  value="50" step="1" min="0" max="100">                            
+                        </div>
+                    </div>
+            </label>
+            <audio src="./asscets/data/music/weather/rain.mp3" id="rain-song"></audio>
+        </div>
+
+        <!-- MUSIC CONTENT -->
+        <div class="music-player">
+            <div class="music">
+                <img src="./asscets/data/img/musicPlayer/prev.png" alt="" id="prev">
+                <img src="./asscets/data/img/musicPlayer/play.png" alt="" id="play">              
+                <img src="./asscets/data/img/musicPlayer/next.png" alt="" id="next">
+            </div>
+            <input id="song-volume" type="range" value="60" min="0" max="100" step="1">
+            <audio src="" id="audio"></audio>
+        </div>
+    </div>
+    <source src="./asscets/data/music/song/1.mp3">
+    
+    <!-- MODAL -->
+         <!-- TOTURIAL MODAL -->
+         <div class="toturial">
+            <div class="toturial-modal">
+                <video src="" class="toturial-video"></video>
+                <div class="toturial-bar"></div>
+                <div class="toturial-content">
+                    <h2 class="toturial-heading"></h2>
+                    <p class="toturial-about"></p>
+                    <button class="toturial-next-btn btn">Next</button>
+                    <button class="toturial-leave btn">Leave Toturial</button>
+                </div>
+            </div>
+        </div>
+    
+</body>
+    <script src="./asscets/js/main.js"></script>
+</html>

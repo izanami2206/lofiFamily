@@ -1,0 +1,47 @@
+:root {
+    --black-color: #000;
+    --color-default: #fff;
+    --color-primary: #f3a952;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/* DISPLAY NONE */
+.none {
+    display: none;
+}
+
+.transparent {
+    color: transparent;
+}
+
+/* BUTTON */
+.btn {
+    outline: none;
+    border: none;
+    border-radius: 32px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: .7;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
